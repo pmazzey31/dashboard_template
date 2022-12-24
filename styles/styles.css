@@ -4,7 +4,8 @@
     --light-color: #bfdbfe;
     --white: #eff6ff; 
     --gray: #464545;
-    --dark-gray: #2e2b2b; 
+    --dark-gray: #2e2b2b;
+    --light-gray: #b6b6b6;
 }
 
 body{
@@ -235,6 +236,30 @@ body{
     display: grid;
     grid-template-rows: repeat(auto-fill, minmax(1fr, 200px));
     align-items: center;
-    padding: 10px 15px;
+    padding: 10px 25px;
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.language, .skill {
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.language:last-child, .skill:last-child {
+    border-bottom: none;
+}
+
+.language-title, .skill-title {
+    color: var(--dark-gray);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.language-yoe, .skill-yoe {
+    margin-top: 10px;
+    font-size:  14px;
+    font-weight: 300;
+    color: var(--dark-gray);
+    text-align: justify;
+    padding-bottom: 10px;
 }
