@@ -21,7 +21,7 @@ body{
     background-color: var(--white);
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
-    grid-template-columns: 70% 1fr;
+    grid-template-columns: 70% 30%;
     grid-template-rows: 1fr 2fr;
     align-items: center;
     row-gap: 10px;
