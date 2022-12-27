@@ -6,6 +6,7 @@
     --gray: #464545;
     --dark-gray: #2e2b2b;
     --light-gray: #b6b6b6;
+    --yellow: #e0bf04;
 }
 
 body{
@@ -154,6 +155,10 @@ body{
     height: 50px;
 }
 
+.sidebar_item a:hover {
+    color: var(--light-gray);
+}
+
 .sidebar_item a p {
     margin-left: 20px;
 }
@@ -177,6 +182,11 @@ body{
     background-color: var(--white);
     border-radius: 20px;
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.main-content .project:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .main-content .project img {
@@ -211,9 +221,13 @@ body{
 }
 
 .project-liveView, .project-repository{
-    color: #1e3a8a;
+    color: var(--main-color);
     text-decoration: none;
     font-size: 22px;
+}
+
+.project-liveView:hover, .project-repository:hover{
+    color: var(--yellow);
 }
 
 .main-content .projects .project .project-description {
